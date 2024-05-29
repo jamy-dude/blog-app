@@ -15,6 +15,12 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Login redirect URL
+LOGIN_REDIRECT_URL = 'home'
+
+# Logout redirect URL
+LOGOUT_REDIRECT_URL = 'home' # new
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
@@ -32,6 +38,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'blog', # new
+    'accounts', # new
 
     'django.contrib.admin',
     'django.contrib.auth',
